@@ -1,0 +1,20 @@
+  <table class = "ui inverted table">
+    <thead>
+    <tr>
+      <th>Custom Tag</th>
+      <th>Video's Site</th>
+      <th>Video's Link</th>
+      <th><a href = "/updates/{{videxlist.id}}" class = "ui tiny violet button uplisting">Update</a></th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each videxlist.contents}}
+      <tr>
+        <td>{{tag}}</td>
+        <td>{{site}}</td>
+        <td> <a href = "{{link}}">{{link}}</a></td>
+        <td></td>
+      </tr>
+      {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+body{
+  background-image:url(https://cdn.glitch.com/0844c796-616e-4f71-82b2-e3ab01c81611%2Fbground2.jpg?1551462811409);
+}
+
+p{
+  background-color: grey;
+  color: black;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+.name{
+  padding-top:20px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+}
+
+.test{
+  background-color: grey;
+}
+
+.ui.link.card {
+ background-color: grey;
+ margin-right:3.5%;
+ margin-left: 3.5%;
+}
+
+.full{
+  color: white;
+}

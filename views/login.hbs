@@ -1,0 +1,15 @@
+{{>welcomemenu id = 'login'}}
+
+<form class = "ui stacked segment inverted form" action = "/authenticate" method = "POST">
+  <h3 class = "ui header">
+    Log-in</h3>
+  <div class = "field">
+    <label>Email</label><input placeholder = "Email" name = "email" autofocus required>
+  </div>
+  <div class = "field">
+    <label>Password</label><input type = "Password" name = "password" required>
+  </div>
+  <button class = "ui violet submit button">
+    Login
+  </button>
+</form>

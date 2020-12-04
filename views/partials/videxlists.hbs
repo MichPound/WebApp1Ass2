@@ -1,0 +1,26 @@
+<div class = "ui link cards">
+{{#each videxlists}}
+<div class = "ui link card">
+  <div class = "image">
+    <img src = "{{photo}}">
+   </div>
+  <div class = "content">
+    <a class = "header">{{title}}</a>
+    <div class = "meta">
+      <a>Contains {{contents.length}} item(s)</a>
+    </div>
+  </div>
+  <div class = "extra content">
+    <a href = "/videxlist/{{id}}" class = "ui tiny blue button"> View</a>
+    <a href = "/videxlist/deletetotal/{{id}}" class = "ui tiny red button deltotal">Delete Videxlist</a>
+  </div>
+</div>
+{{/each}}
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+{
+  "logins": [
+    {
+      "firstName": "Michael",
+      "lastName": "Pound",
+      "email": "michwpound@gmail.com",
+      "password": "123",
+      "id": "13d01b6a-c8df-47db-bc28-dabd97f8f4a7"
+    },
+    {
+      "firstName": "M",
+      "lastName": "Holland",
+      "email": "holland@mail.ie",
+      "password": "321",
+      "id": "18b21a8f-c1cf-4d37-b3a8-24803144877a"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Test",
+      "email": "Test",
+      "password": "1",
+      "id": "ce12dbfb-7bd0-4429-b8e0-ecc5d80de7b9"
+    },
+    {
+      "firstName": "b",
+      "lastName": "m",
+      "email": "bm@wit.ie",
+      "password": "bm",
+      "id": "394e2ac8-dff7-49da-8637-ce0934c368a2"
+    }
+  ]
+}

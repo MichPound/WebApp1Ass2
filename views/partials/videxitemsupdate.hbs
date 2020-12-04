@@ -1,0 +1,36 @@
+ <table class = "ui inverted fixed table">
+    <thead>
+    <tr>
+      <th class = "three wide">Custom Tag</th>
+      <th class = "three wide">Video's Site</th>
+      <th class = "six wide">Video's Link</th>
+      <th class = "two wide"></th>
+      <th class = "two wide"></th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each videxlist.contents}}
+      <form class = "ui form" action = "/updates/{{../videxlist.id}}/updateitem/{{id}}" method = "POST">
+        <tr class = "fields"> 
+        <td class = "field">
+          <span class = "ui input">
+            <input placeholder = "Tag" type = "text" size = "18" name = "tag" autofocus required value = "{{tag}}">
+            </span>
+          </td>
+          <td class = "field">
+            <span class = "ui input">
+              <input placeholder = "Site" type = "text" size = "18" name = "site" required value = "{{site}}">
+            </span>
+          </td>
+          <td class = "field">
+            <span class = "ui input">
+              <input placeholder = "Link" type = "text" size = "48" name = "link" required value = "{{link}}">
+            </span>
+          </td>
+        <td> <button  class = "ui tiny violet submit button">Update</button></td>
+          <td> <a href = "/updates/{{../videxlist.id}}/deletelisting/{{id}}" class = "ui tiny red button dellisting">Delete</a></td>
+      </tr>
+      </form>
+      {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,37 @@
+{{> menu id="about"}}
+
+<h1>
+  About Videx Playlists
+</h1>
+
+<section class="ui center aligned middle aligned inverted segment">
+  <img src="https://cdn.glitch.com/0844c796-616e-4f71-82b2-e3ab01c81611%2Fcartoonpic.jpg?1551877703096" alt="Image of me" class="ui small circular image middle aligned">
+  <p>
+    Author of Videx Playlists: M. Holland <br> Phone: 123456789 <br> Email: fake@this.ie
+  </p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9771.639924973!2d-7.1385446!3d52.2450187!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842c41310dd4131%3A0x4042f0dcf13f7cfe!2sWaterford+Institute+of+Technology!5e0!3m2!1sen!2sie!4v1551195754732" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+
+<form class = "ui stacked inverted segment form" action = "/about/addcomment" method = "POST">
+  <div class = "field">
+    <label>Leave us a Comment</label>
+    <input placeholder = "Comment" type = "text" name = "title" autofocus required>
+  </div>
+  <button class = "ui inverted submit button">
+     Add Comment
+  </button>
+</form>
+
+{{#each comments}}
+<section class = "ui inverted segment">
+<h2 class = "ui header">
+  {{name}}, 
+  <a>
+    {{formatDate date}}
+  </a>
+  </h2>
+  <p>
+    {{title}}
+  </p>
+</section>
+{{/each}}
